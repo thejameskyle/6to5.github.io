@@ -1,75 +1,289 @@
-<html>
+<!doctype html>
+<html lang="en-US">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>6to5 · Next generation JavaScript, today.</title>
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>6to5 &middot; Turn ES6+ code into readable vanilla ES5</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+    <link rel="stylesheet/less" type="text/css" href="styles.less">
+    <script src="node_modules/less/dist/less.js"></script>
   </head>
   <body>
-    <a href="https://github.com/6to5/6to5">
-      <img class="ribbon" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub">
-    </a>
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3 sidebar">
-          <a href="index.html" class="logo">
-            <img alt="6to5" src="https://raw.githubusercontent.com/6to5/logo/master/logo.png">
-          </a>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="header">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand logo" href="index.html"><span class="logo-six">6</span>to<span class="logo-five">5</span></a>
+        </div>
 
-          <ul class="nav nav-pills nav-stacked">
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="nav navbar-nav">
+            <li><a href="tour.html">Tour</a></li>
             <li><a href="features.html">Features</a></li>
             <li><a href="usage.html">Usage</a></li>
             <li class="active"><a href="plugins.html">Plugins</a></li>
-            <li><a href="differences.html">Differences</a></li>
-            <li><a href="react.html">React/JSX</a></li>
-            <li><a href="contributors.html">Contributors</a></li>
-            <!--<li><a href="experimental.html">Experimental</a></li>-->
-            <li><a href="playground.html">Playground</a></li>
-            <li><a href="https://gitter.im/6to5/6to5">Support</a></li>
+            <li><a href="repl.html">REPL</a></li>
           </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-push-2">
+            <h1>Plugins</h1>
+            <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-push-2">
+          <form role="form">
+            <div class="form-group">
+              <label for="search">Search</label>
+              <input type="email" class="form-control input-lg" id="search" placeholder="Enter search term">
+            </div>
+          </form>
 
           <hr>
 
-          <ul class="nav nav-pills nav-stacked">
-            <li><a href="repl.html">REPL</a></li></a>
-            <li><a href="caveats.html">Caveats</a></li>
-            <li><a href="polyfill.html">Polyfill</a></li>
-            <li><a href="browser.html">Browser</a></li>
-            <li><a href="modules.html">Modules</a></li>
-            <li><a href="optional-runtime.html">Optional runtime</a></li>
-          </ul>
+          <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+              <div class="pull-left">
+                <h3 class="panel-title">gulp-6to5</h3>
+              </div>
+              <div class="pull-right">
+                77 <i class="glyphicon glyphicon-star"></i><span class="sr-only">Stars</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolores, error excepturi, explicabo fugiat incidunt laborum libero neque nisi, obcaecati odio odit optio quam repudiandae saepe sequi sunt velit veritatis?</p>
+            </div>
+            <div class="panel-footer">
+              <div class="plugin-labels">
+                <span class="label label-default">gulpplugin</span>
+                <span class="label label-default">rewriting</span>
+                <span class="label label-default">transformation</span>
+                <span class="label label-default">syntax</span>
+                <span class="label label-default">codegen</span>
+                <span class="label label-default">desugaring</span>
+                <span class="label label-default">javascript</span>
+                <span class="label label-default">ecmascript</span>
+                <span class="label label-default">language</span>
+                <span class="label label-default">es5</span>
+                <span class="label label-default">es6</span>
+                <span class="label label-default">ES.next</span>
+                <span class="label label-default">harmony</span>
+                <span class="label label-default">compiler</span>
+                <span class="label label-default">transpiler</span>
+                <span class="label label-default">6to5</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+              <div class="pull-left">
+                <h3 class="panel-title">grunt-6to5</h3>
+              </div>
+              <div class="pull-right">
+                35 <i class="glyphicon glyphicon-star"></i><span class="sr-only">Stars</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores aut autem cumque delectus eos est et eum fugiat illum laborum minus officiis perferendis quaerat qui sequi, ut voluptatem voluptatum.</p>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+              <div class="pull-left">
+                <h3 class="panel-title">6to5-browserify</h3>
+              </div>
+              <div class="pull-right">
+                30 <i class="glyphicon glyphicon-star"></i><span class="sr-only">Stars</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quidem quis reiciendis repudiandae voluptate. Cumque eveniet maiores tempora voluptatibus. A accusamus, deleniti eaque ipsa iste molestias officia quasi quo quod.</p>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+              <div class="pull-left">
+                <h3 class="panel-title">broccoli-6to5-transpiler</h3>
+              </div>
+              <div class="pull-right">
+                1 <i class="glyphicon glyphicon-star"></i><span class="sr-only">Stars</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi distinctio ex hic id, illo impedit nemo nesciunt praesentium provident quibusdam quisquam quos similique sint suscipit voluptatem. Accusantium consectetur pariatur quis.</p>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+              <div class="pull-left">
+                <h3 class="panel-title">6to5-brunch</h3>
+              </div>
+              <div class="pull-right">
+                2 <i class="glyphicon glyphicon-star"></i><span class="sr-only">Stars</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aut beatae corporis, deserunt, dignissimos exercitationem fuga hic id ipsam maxime modi placeat quis recusandae sequi similique voluptate voluptates! Eaque, voluptates!</p>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+              <div class="pull-left">
+                <h3 class="panel-title">duo-6to5</h3>
+              </div>
+              <div class="pull-right">
+                1 <i class="glyphicon glyphicon-star"></i><span class="sr-only">Stars</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias consequuntur dicta esse minima, molestias nam possimus quae quis quo suscipit tempore veritatis? Enim in laboriosam nostrum veniam voluptatem, voluptates.</p>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+              <div class="pull-left">
+                <h3 class="panel-title">6to5-connect</h3>
+              </div>
+              <div class="pull-right">
+                4 <i class="glyphicon glyphicon-star"></i><span class="sr-only">Stars</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consectetur corporis doloremque praesentium sapiente. Ad architecto asperiores dicta, dignissimos, dolore dolorem exercitationem ipsum, laboriosam nobis obcaecati perspiciatis voluptate. Ex, obcaecati.</p>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+              <div class="pull-left">
+                <h3 class="panel-title">gobble-6to5</h3>
+              </div>
+              <div class="pull-right">
+                1 <i class="glyphicon glyphicon-star"></i><span class="sr-only">Stars</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci alias animi aut cupiditate distinctio dolor dolorem est ex explicabo fugiat laborum libero nobis nulla odio, quae quas quod repudiandae.</p>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+              <div class="pull-left">
+                <h3 class="panel-title">jade-6to5</h3>
+              </div>
+              <div class="pull-right">
+                1 <i class="glyphicon glyphicon-star"></i><span class="sr-only">Stars</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut blanditiis eligendi hic maxime, molestiae molestias omnis quaerat quam? Assumenda doloribus et hic laudantium maxime modi nemo, nobis perspiciatis sit.</p>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+              <div class="pull-left">
+                <h3 class="panel-title">6to5-jest</h3>
+              </div>
+              <div class="pull-right">
+                1 <i class="glyphicon glyphicon-star"></i><span class="sr-only">Stars</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores consectetur corporis cumque, deleniti, dolor dolore, dolores fuga in inventore nulla omnis placeat recusandae reprehenderit sequi soluta sunt vel veniam.</p>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+              <div class="pull-left">
+                <h3 class="panel-title">karma-6to5-preprocessor</h3>
+              </div>
+              <div class="pull-right">
+                2 <i class="glyphicon glyphicon-star"></i><span class="sr-only">Stars</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam assumenda blanditiis deleniti dolorum, ducimus ea, earum eligendi exercitationem expedita facilis fugit ipsum iste laborum maxime officia ratione tempora veniam veritatis?</p>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+              <div class="pull-left">
+                <h3 class="panel-title">6to5-mocha</h3>
+              </div>
+              <div class="pull-right">
+                35 <i class="glyphicon glyphicon-star"></i><span class="sr-only">Stars</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet architecto asperiores commodi delectus deserunt dolor est et eum illum minus mollitia nobis, numquam odio, quod, recusandae soluta suscipit tenetur?</p>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+              <div class="pull-left">
+                <h3 class="panel-title">sprockets-es6</h3>
+              </div>
+              <div class="pull-right">
+                8 <i class="glyphicon glyphicon-star"></i><span class="sr-only">Stars</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci architecto at beatae dignissimos earum ipsum iure magni molestias, mollitia odit officiis perspiciatis possimus quaerat reprehenderit rerum soluta veritatis voluptas?</p>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+              <div class="pull-left">
+                <h3 class="panel-title">6to5-loader</h3>
+              </div>
+              <div class="pull-right">
+                14 <i class="glyphicon glyphicon-star"></i><span class="sr-only">Stars</span>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quam vitae voluptas. Cupiditate labore laboriosam molestiae nam nobis quaerat quo totam! A cupiditate eaque excepturi itaque magnam, quod sit tempore.</p>
+            </div>
+          </div>
         </div>
 
-        <div class="col-sm-9 markdown-body">
-          <h1 id="plugins"><a class="anchor" href="#plugins" aria-hidden="true"><span class="octicon octicon-link"></span></a>Plugins</h1>
-<ul>
-<li><a href="https://github.com/very-geek/broccoli-6to5-transpiler">Broccoli</a></li>
-<li><a href="https://github.com/6to5/6to5-browserify">Browserify</a></li>
-<li><a href="https://github.com/es128/6to5-brunch">Brunch</a></li>
-<li><a href="https://github.com/bdo-labs/duo6to5">Duo</a></li>
-<li><a href="https://github.com/6to5/6to5-connect">Connect</a></li>
-<li><a href="https://github.com/gobblejs/gobble-6to5">Gobble</a></li>
-<li><a href="https://github.com/sindresorhus/gulp-6to5">Gulp</a></li>
-<li><a href="https://github.com/sindresorhus/grunt-6to5">Grunt</a></li>
-<li><a href="https://github.com/douglasduteil/isparta">Isparta</a> - Code coverage with <code>karma</code> and <code>instanbul</code> using 6to5</li>
-<li><a href="https://github.com/apoxx/jade-6to5">Jade</a></li>
-<li><a href="https://github.com/6to5/6to5-jest">Jest</a></li>
-<li><a href="https://github.com/strml/jsxhint">JSXHint</a> - A wrapper around JSHint to allow linting of JSX files</li>
-<li><a href="https://github.com/shuhei/karma-6to5-preprocessor">Karma</a></li>
-<li><a href="https://github.com/6to5/6to5-mocha">Mocha</a></li>
-<li><a href="https://github.com/josh/sprockets-es6">Rails</a> or via <a href="https://github.com/6to5/6to5-rails">browserify-rails</a></li>
-<li><a href="https://github.com/couto/6to5-loader">webpack</a></li>
-</ul>
-
-        </div>
       </div>
-
-      <footer>
-        <hr>
-        <p><a href="https://github.com/6to5/6to5">6to5</a> v1.15.0</p>
-      </footer>
     </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/lodash/lodash.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
